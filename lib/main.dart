@@ -22,9 +22,13 @@ class MyApp extends StatelessWidget {
               AppBar(backgroundColor: const Color.fromARGB(255, 191, 13, 37)),
           body: Center(
             child: Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(300),
+                color: const Color.fromARGB(255, 115, 7, 170),
+              ),
               height: 300,
               width: 300,
-              color: const Color.fromARGB(255, 115, 7, 170),
+              //color: const Color.fromARGB(255, 115, 7, 170),
               child: const Center(
                   child: Text(
                 "Movies Application",
