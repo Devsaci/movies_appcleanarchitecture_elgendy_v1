@@ -29,3 +29,5 @@ Dependency injections (Service locator)
 
 6.  جديدة  topics  او لو انت شخص عاوز تطور من تفسك وتتعلم 
 
+# Section 6 : Complete App with all Concepts
+17. Domain Layer: Movie Entities
