@@ -3,7 +3,7 @@ import 'package:movies_appcleanarchitecture_elgendy_v1/movies/domain/movie.dart'
 
 void main() {
   bool kDebugMode = true;
-  Movie movie1 = Movie(
+  Movie movie1 = const Movie(
     id: 1,
     title: "title1",
     backdropPath: "backdropPath",
@@ -11,7 +11,7 @@ void main() {
     voteAverage: 5,
     genreIds: [0],
   );
-  Movie movie2 = Movie(
+  Movie movie2 = const Movie(
     id: 1,
     title: "title1",
     backdropPath: "backdropPath",
@@ -26,6 +26,10 @@ void main() {
     // I/flutter (15001): false
     // I/flutter (15001): 764413094
     // I/flutter (15001): 192892496
+
+    ///print m1==m2 result
+    // I/flutter (15001): true
+    // I/flutter (15001): 369081570
   }
   runApp(const MyApp());
 }
