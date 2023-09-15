@@ -1,6 +1,27 @@
 import 'package:flutter/material.dart';
+import 'package:movies_appcleanarchitecture_elgendy_v1/movies/domain/movie.dart';
 
 void main() {
+  bool kDebugMode = true;
+  Movie movie1 = Movie(
+    id: 1,
+    title: "title1",
+    backdropPath: "backdropPath",
+    overview: "overview",
+    voteAverage: 5,
+    genreIds: [0],
+  );
+  Movie movie2 = Movie(
+    id: 2,
+    title: "title2",
+    backdropPath: "backdropPath",
+    overview: "overview",
+    voteAverage: 10,
+    genreIds: [10],
+  );
+  if (kDebugMode) {
+    print(movie1 == movie2);
+  }
   runApp(const MyApp());
 }
 
