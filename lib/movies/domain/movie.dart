@@ -14,25 +14,25 @@ class Movie {
     required this.genreIds,
   });
 
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is Movie &&
-          runtimeType == other.runtimeType &&
-          id == other.id &&
-          title == other.title &&
-          backdropPath == other.backdropPath &&
-          genreIds == other.genreIds &&
-          overview == other.overview &&
-          voteAverage == other.voteAverage;
-  @override
-  int get hashCode =>
-      id.hashCode ^
-      title.hashCode ^
-      backdropPath.hashCode ^
-      genreIds.hashCode ^
-      overview.hashCode ^
-      voteAverage.hashCode;
+  // @override
+  // bool operator ==(Object other) =>
+  //     identical(this, other) ||
+  //     other is Movie &&
+  //         runtimeType == other.runtimeType &&
+  //         id == other.id &&
+  //         title == other.title &&
+  //         backdropPath == other.backdropPath &&
+  //         genreIds == other.genreIds &&
+  //         overview == other.overview &&
+  //         voteAverage == other.voteAverage;
+  // @override
+  // int get hashCode =>
+  //     id.hashCode ^
+  //     title.hashCode ^
+  //     backdropPath.hashCode ^
+  //     genreIds.hashCode ^
+  //     overview.hashCode ^
+  //     voteAverage.hashCode;
 
   /// print m1==m2 result
   // I/flutter (15001): false
