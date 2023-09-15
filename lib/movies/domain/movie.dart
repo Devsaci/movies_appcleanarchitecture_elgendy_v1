@@ -1,4 +1,6 @@
-class Movie {
+import 'package:equatable/equatable.dart';
+
+class Movie extends Equatable {
   final int id;
   final String title;
   final String backdropPath;
@@ -13,6 +15,10 @@ class Movie {
     required this.voteAverage,
     required this.genreIds,
   });
+
+  @override
+  // TODO: implement props
+  List<Object?> get props => throw UnimplementedError();
 
   // @override
   // bool operator ==(Object other) =>
