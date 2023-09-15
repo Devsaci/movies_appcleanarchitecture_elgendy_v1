@@ -12,12 +12,12 @@ void main() {
     genreIds: [0],
   );
   Movie movie2 = Movie(
-    id: 2,
-    title: "title2",
+    id: 1,
+    title: "title1",
     backdropPath: "backdropPath",
     overview: "overview",
-    voteAverage: 10,
-    genreIds: [10],
+    voteAverage: 5,
+    genreIds: [0],
   );
   if (kDebugMode) {
     print(movie1 == movie2);
