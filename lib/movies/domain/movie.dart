@@ -17,8 +17,14 @@ class Movie extends Equatable {
   });
 
   @override
-  // TODO: implement props
-  List<Object?> get props => throw UnimplementedError();
+  List<Object?> get props => [
+        id,
+        title,
+        backdropPath,
+        genreIds,
+        override,
+        voteAverage,
+      ];
 
   // @override
   // bool operator ==(Object other) =>
