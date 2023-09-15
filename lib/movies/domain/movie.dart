@@ -5,14 +5,14 @@ class Movie {
   final String overview;
   final int voteAverage;
   final List<int> genreIds;
-  Movie(
-    this.id,
-    this.title,
-    this.backdropPath,
-    this.overview,
-    this.voteAverage,
-    this.genreIds,
-  );
+  Movie({
+    required this.id,
+    required this.title,
+    required this.backdropPath,
+    required this.overview,
+    required this.voteAverage,
+    required this.genreIds,
+  });
 }
 
   // {  
