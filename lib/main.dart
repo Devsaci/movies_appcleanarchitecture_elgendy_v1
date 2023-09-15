@@ -21,6 +21,11 @@ void main() {
   );
   if (kDebugMode) {
     print(movie1 == movie2);
+    print(movie1.hashCode);
+    print(movie2.hashCode);
+    // I/flutter (15001): false
+    // I/flutter (15001): 764413094
+    // I/flutter (15001): 192892496
   }
   runApp(const MyApp());
 }
