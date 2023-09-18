@@ -2,39 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:movies_appcleanarchitecture_elgendy_v1/movies/domain/entiies/movie.dart';
 
 void main() {
-  bool kDebugMode = true;
-  Movie movie1 = const Movie(
-    id: 1,
-    title: "title1",
-    backdropPath: "backdropPath",
-    overview: "overview",
-    voteAverage: 5,
-    genreIds: [0],
-  );
-  Movie movie2 = const Movie(
-    id: 1,
-    title: "title1",
-    backdropPath: "backdropPath",
-    overview: "overview",
-    voteAverage: 5,
-    genreIds: [0],
-  );
-  if (kDebugMode) {
-    print(movie1 == movie2);
-    print("movie1.hashCode + ${movie1.hashCode}");
-    print("movie2.hashCode + ${movie2.hashCode}");
-    // I/flutter (15001): false
-    // I/flutter (15001): 764413094
-    // I/flutter (15001): 192892496
-
-    ///print m1==m2 result
-    // I/flutter (15001): true
-    // I/flutter (15001): 369081570
-
-    // I/flutter (15001): true
-    // I/flutter (15001): movie1.hashCode + 969531367
-    // I/flutter (15001): movie2.hashCode + 969531367
-  }
   runApp(const MyApp());
 }
 
