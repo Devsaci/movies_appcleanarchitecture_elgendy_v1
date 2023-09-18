@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:movies_appcleanarchitecture_elgendy_v1/movies/domain/movie.dart';
+import 'package:movies_appcleanarchitecture_elgendy_v1/movies/domain/entiies/movie.dart';
 
 void main() {
   bool kDebugMode = true;
