@@ -4,4 +4,5 @@ class GetNowPlayingMoviesUseCase {
   final BaseMoviesRepository baseMoviesRepository;
 
   GetNowPlayingMoviesUseCase(this.baseMoviesRepository);
+  excute() {}
 }
