@@ -4,4 +4,6 @@ class GetTopRatedMoviesUseCase {
   final BaseMoviesRepository baseMoviesRepository;
 
   GetTopRatedMoviesUseCase(this.baseMoviesRepository);
+
+  excute() {}
 }
