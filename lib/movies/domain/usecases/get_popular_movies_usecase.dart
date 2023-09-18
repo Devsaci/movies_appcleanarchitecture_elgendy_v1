@@ -4,5 +4,7 @@ class GetPopularMoviesUseCase {
   final BaseMoviesRepository baseMoviesRepository;
 
   GetPopularMoviesUseCase(this.baseMoviesRepository);
-  excute() {}
+  excute() async {
+    return await baseMoviesRepository.getPopularMovies();
+  }
 }
