@@ -33,3 +33,4 @@ Dependency injections (Service locator)
 17. Domain Layer: Movie Entities
 18. Equatable Entities and what is XOR Operator
 19. Domain Layer: Movies Repository
+20. Domain Layer: Movies UseCases
