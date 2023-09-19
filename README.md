@@ -38,3 +38,14 @@ Dependency injections (Service locator)
 # Section 7 : Complete App with all Concepts : Data Layer
 22. Data layer: Movie Model
 23. Data Layer: Movie Data Source
+https://www.themoviedb.org/u/devsaci 
+
+curl --request GET \
+     --url 'https://api.themoviedb.org/3/movie/now_playing?language=en-US&page=1' \
+     --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3NzlmMTA3OTE0ZTc4NjY4YmJjYzJhZGMwMGU2YzI4NiIsInN1YiI6IjY1MDJmY2NmZDdkY2QyMDEzOWNjMjQ5MCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.2hQxl1hKz0ne5MJlD4BmuZdWNRyLgu1vf4L19qJLzDM' \
+     --header 'accept: application/json'
+    --request GET   
+     https://api.themoviedb.org/3/movie/now_playing?api_key=779f107914e78668bbcc2adc00e6c286&language=en-US&page=1
+
+     -- respons
+     Json file.
