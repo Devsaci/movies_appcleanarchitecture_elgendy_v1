@@ -1,3 +1,7 @@
+import 'package:dio/dio.dart';
+
 class MovieRemoteDataSource {
-  getNowPlayingMovies() {}
+  getNowPlayingMovies() {
+    Dio().get("path");
+  }
 }
