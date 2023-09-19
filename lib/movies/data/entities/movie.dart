@@ -11,15 +11,13 @@ class MovieModel extends Movie {
     required super.releaseDate,
   });
 
-  factory MovieModel.fromJson(Map<String, dynamic> json) {
-    return const MovieModel(
-      id: 0,
-      title: "title",
-      backdropPath: "backdropPath",
-      overview: "overview",
-      voteAverage: 0,
-      genreIds: [0],
-      releaseDate: "releaseDate",
-    );
-  }
+  factory MovieModel.fromJson(Map<String, dynamic> json) => MovieModel(
+        id: json["id"],
+        title: "title",
+        backdropPath: "backdropPath",
+        overview: "overview",
+        voteAverage: 0,
+        genreIds: [0],
+        releaseDate: "releaseDate",
+      );
 }
