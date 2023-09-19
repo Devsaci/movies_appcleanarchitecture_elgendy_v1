@@ -17,7 +17,7 @@ class MovieModel extends Movie {
         backdropPath: json["backdrop_path"],
         overview: "overview",
         voteAverage: 0,
-        genreIds: [0],
+        genreIds: List<int>.from(json["genre_ids"].map((e) => e)),
         releaseDate: "releaseDate",
       );
 }
