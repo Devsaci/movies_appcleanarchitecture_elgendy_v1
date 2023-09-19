@@ -14,7 +14,7 @@ class MovieModel extends Movie {
   factory MovieModel.fromJson(Map<String, dynamic> json) => MovieModel(
         id: json["id"],
         title: json["title"],
-        backdropPath: "backdropPath",
+        backdropPath: json["backdrop_path"],
         overview: "overview",
         voteAverage: 0,
         genreIds: [0],
