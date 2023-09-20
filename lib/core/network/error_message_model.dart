@@ -22,7 +22,7 @@ class ErrorMessageModel extends Equatable {
     return ErrorMessageModel(
       statusCode: json["status_code"],
       statusMessage: json["status_message"],
-      success: true,
+      success: json["success"],
     );
   }
 }
