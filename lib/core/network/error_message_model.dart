@@ -1,10 +1,12 @@
 import 'package:equatable/equatable.dart';
 
 class ErrorMessageModel extends Equatable {
-  late final int statusCode;
-  late final String statusMessage;
-  late final bool success;
+  final int statusCode;
+  final String statusMessage;
+  final bool success;
+
+  const ErrorMessageModel(this.statusCode, this.statusMessage, this.success);
+
   @override
-  // TODO: implement props
   List<Object?> get props => throw UnimplementedError();
 }
