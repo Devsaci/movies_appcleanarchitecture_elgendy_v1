@@ -5,7 +5,11 @@ class ErrorMessageModel extends Equatable {
   final String statusMessage;
   final bool success;
 
-  const ErrorMessageModel(this.statusCode, this.statusMessage, this.success);
+  const ErrorMessageModel({
+    required this.statusCode,
+    required this.statusMessage,
+    required this.success,
+  });
 
   @override
   List<Object?> get props => throw UnimplementedError();
