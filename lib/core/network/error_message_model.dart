@@ -5,7 +5,7 @@ class ErrorMessageModel extends Equatable {
   final String statusMessage;
   final bool success;
 
-  ErrorMessageModel({
+  const ErrorMessageModel({
     required this.statusCode,
     required this.statusMessage,
     required this.success,
@@ -18,9 +18,9 @@ class ErrorMessageModel extends Equatable {
         success,
       ];
 
-  factory ErrorMessageModel.fromJson() {
+  factory ErrorMessageModel.fromJson(Map<String, dynamic> json) {
     return ErrorMessageModel(
-      statusCode: 200,
+      statusCode: json["status_code"],
       statusMessage: "status_message",
       success: true,
     );
