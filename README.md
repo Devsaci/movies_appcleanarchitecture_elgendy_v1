@@ -49,3 +49,6 @@ curl --request GET \
 
      -- respons
      Json file.
+
+
+24. Data Layer : Handle Exception Data Source
