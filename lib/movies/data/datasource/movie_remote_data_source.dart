@@ -7,7 +7,7 @@ import '../../../core/network/api_constance.dart';
 
 abstract class BaseMovieRemoteDataSource {}
 
-class MovieRemoteDataSource {
+class MovieRemoteDataSource extends BaseMovieRemoteDataSource {
   Future<List<MovieModel>> getNowPlayingMovies() async {
     final response = await Dio().get(ApiConstance.nowPlayingMoviesPath);
     if (response.statusCode == 200) {
