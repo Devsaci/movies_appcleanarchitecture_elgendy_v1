@@ -25,8 +25,8 @@ class MovieRemoteDataSource extends BaseMovieRemoteDataSource {
   }
 
   @override
-  Future<List<MovieModel>> getPopularMovies() {
-    // TODO: implement getPopularMovies
+  Future<List<MovieModel>> getPopularMovies() async {
+    final response = await Dio().get(ApiConstance.topRatedMoviesPath);
     throw UnimplementedError();
   }
 }
