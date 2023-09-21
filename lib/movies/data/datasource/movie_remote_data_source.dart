@@ -5,6 +5,8 @@ import 'package:movies_appcleanarchitecture_elgendy_v1/movies/data/entities/movi
 
 import '../../../core/network/api_constance.dart';
 
+abstract class BaseMovieRemoteDataSource {}
+
 class MovieRemoteDataSource {
   Future<List<MovieModel>> getNowPlayingMovies() async {
     final response = await Dio().get(ApiConstance.nowPlayingMoviesPath);
