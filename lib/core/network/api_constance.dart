@@ -1,1 +1,3 @@
-class ApiConstance {}
+class ApiConstance {
+  static const String baseUrl = "https://api.themoviedb.org/3";
+}
