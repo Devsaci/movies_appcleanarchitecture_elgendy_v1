@@ -7,6 +7,7 @@ import '../../../core/network/api_constance.dart';
 
 abstract class BaseMovieRemoteDataSource {
   Future<List<MovieModel>> getNowPlayingMovies();
+  Future<List<MovieModel>> getPopularMovies();
 }
 
 class MovieRemoteDataSource extends BaseMovieRemoteDataSource {
@@ -23,15 +24,9 @@ class MovieRemoteDataSource extends BaseMovieRemoteDataSource {
     }
   }
 
-  // Extracted Method checkGetNowPlayingMovies
-  // List<MovieModel> checkGetNowPlayingMovies(Response<dynamic> response) {
-  //   if (response.statusCode == 200) {
-  //     return List<MovieModel>.from((response.data['results'] as List)
-  //         .map((e) => MovieModel.fromJson(e)));
-  //   } else {
-  //     throw ServerException(
-  //       errorMessageModel: ErrorMessageModel.fromJson(response.data),
-  //     );
-  //   }
-  // }
+  @override
+  Future<List<MovieModel>> getPopularMovies() {
+    // TODO: implement getPopularMovies
+    throw UnimplementedError();
+  }
 }
