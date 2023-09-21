@@ -11,10 +11,23 @@ abstract class BaseMovieRemoteDataSource {
 
 class MovieRemoteDataSource extends BaseMovieRemoteDataSource {
   @override
-  Future<List<MovieModel>> getNowPlayingMovies() {
-    // TODO: implement getNowPlayingMovies
-    throw UnimplementedError();
+  Future<List<MovieModel>> getNowPlayingMovies() async {
+    final response = await Dio().get(ApiConstance.nowPlayingMoviesPath);
+    return checkGetNowPlayingMovies(response);
   }
+
+  // Extracted Method checkGetNowPlayingMovies
+  List<MovieModel> checkGetNowPlayingMovies(Response<dynamic> response) {
+    if (response.statusCode == 200) {
+      return List<MovieModel>.from((response.data['results'] as List)
+          .map((e) => MovieModel.fromJson(e)));
+    } else {
+      throw ServerException(
+        errorMessageModel: ErrorMessageModel.fromJson(response.data),
+      );
+    }
+  }
+
   // Future<List<MovieModel>> getNowPlayingMovies() async {
   //   final response = await Dio().get(ApiConstance.nowPlayingMoviesPath);
   //   if (response.statusCode == 200) {
