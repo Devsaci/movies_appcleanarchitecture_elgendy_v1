@@ -8,6 +8,7 @@ import '../../../core/network/api_constance.dart';
 abstract class BaseMovieRemoteDataSource {
   Future<List<MovieModel>> getNowPlayingMovies();
   Future<List<MovieModel>> getPopularMovies();
+  Future<List<MovieModel>> getTopRatedMovies();
 }
 
 class MovieRemoteDataSource extends BaseMovieRemoteDataSource {
@@ -35,5 +36,11 @@ class MovieRemoteDataSource extends BaseMovieRemoteDataSource {
         errorMessageModel: ErrorMessageModel.fromJson(response.data),
       );
     }
+  }
+
+  @override
+  Future<List<MovieModel>> getTopRatedMovies() {
+    // TODO: implement getTopRatedMovies
+    throw UnimplementedError();
   }
 }
