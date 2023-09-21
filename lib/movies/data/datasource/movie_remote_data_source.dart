@@ -1,4 +1,6 @@
 import 'package:dio/dio.dart';
+import 'package:movies_appcleanarchitecture_elgendy_v1/core/error/exceptions.dart';
+import 'package:movies_appcleanarchitecture_elgendy_v1/core/network/error_message_model.dart';
 import 'package:movies_appcleanarchitecture_elgendy_v1/movies/data/entities/movie.dart';
 
 class MovieRemoteDataSource {
